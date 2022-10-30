@@ -105,3 +105,6 @@ dist
 
 # Service Account Key
 serviceAccountKey.json
+
+# Ruuvitag MACs to read
+ruuviTagsToRead.json
