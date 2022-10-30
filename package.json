@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/osro/ruuvinkanta#readme",
   "dependencies": {
-    "firebase": "^9.12.1",
+    "firebase-admin": "^11.2.0",
     "node-ruuvitag": "^4.6.1"
   }
 }

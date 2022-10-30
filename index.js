@@ -1,4 +1,10 @@
 const ruuvi = require('node-ruuvitag');
+var admin = require("firebase-admin");
+var serviceAccount = require("./serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
 
 ruuvi.on('found', tag => {
   console.log('Found RuuviTag, id: ' + tag.id);
